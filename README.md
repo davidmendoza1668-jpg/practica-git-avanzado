@@ -7,6 +7,7 @@ para practicar comandos avanzados de Git.
 - Sumar
 - Restar
 - Multiplicar
+- Dividir
 
 ## 📝 Cómo ejecutar
 ```
