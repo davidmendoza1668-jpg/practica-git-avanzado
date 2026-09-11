@@ -103,3 +103,30 @@ muestra este comando.
 
 ## ✅ Entrega
 Link de tu repositorio (fork) + pantallazo de "git log --oneline"
+
+## 📚 Teoría — Actividad 2
+
+## ¿Qué es Semantic Versioning (SemVer)?
+
+**Semantic Versioning** (o *Versionado Semántico*) es un estándar y conjunto de reglas que define cómo asignar y mantener los números de versión en un proyecto de software. Su objetivo principal es comunicar de forma clara a los usuarios y desarrolladores qué tipo de cambios incluye una nueva actualización (si incluye cambios drásticos, nuevas funcionalidades o solo corrección de errores).
+
+El formato estándar consta de tres números separados por puntos: **`MAJOR.MINOR.PATCH`** (ejemplo: `v1.0.0`).
+
+---
+
+### Estructura y Ejemplos de SemVer
+
+#### 1. MAJOR (Versión Mayor) — `X.0.0`
+* **¿Cuándo cambia?** Cuando se realizan cambios drásticos en la arquitectura o en la API que **rompen la compatibilidad con versiones anteriores** (*Breaking Changes*). Los usuarios deben modificar su código o configuración para actualizar a esta versión.
+* **Ejemplo:** Pasa de `v1.5.2` a **`v2.0.0`**.
+  * *Caso real:* Una aplicación cambia completamente su base de datos o elimina endpoints antiguos de una API REST.
+
+#### 2. MINOR (Versión Menor) — `1.X.0`
+* **¿Cuándo cambia?** Cuando se añaden **nuevas funcionalidades de manera retrocompatible** (sin romper nada de lo que ya funcionaba).
+* **Ejemplo:** Pasa de `v1.2.1` a **`v1.3.0`**.
+  * *Caso real:* Se añade un nuevo botón de "Modo Oscuro" o se integra una nueva pasarela de pago sin alterar el funcionamiento existente.
+
+#### 3. PATCH (Parche / Corrección) — `1.0.X`
+* **¿Cuándo cambia?** Cuando se aplican **correcciones de errores (bugs)**, parches de seguridad o pequeñas optimizaciones internas que no añaden funcionalidades ni rompen compatibilidad.
+* **Ejemplo:** Pasa de `v1.0.0` a **`v1.0.1`**.
+  * *Caso real:* Se corrige un error tipográfico en un formulario o se arregla un fallo donde un botón no respondía al hacer clic.
